@@ -659,3 +659,13 @@ footer {
     ;
     color: white;
 }
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-track{
+    background:linear-gradient(rgb(255, 163, 191), rgb(145, 126, 243));
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#ff0d49, #07116d);
+    border-radius: 10px;
+}
