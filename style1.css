@@ -669,3 +669,6 @@ footer {
     background: linear-gradient(#ff0d49, #07116d);
     border-radius: 10px;
 }
+.card-text{
+    color: white;
+}
