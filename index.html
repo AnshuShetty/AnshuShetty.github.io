@@ -99,7 +99,7 @@
               <h2>ANSHU SHETTY</h2>
               <H4>Student of</H4>
               <p>ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING</p>
-              <button type="button" class="btn"> <a class="nav" aria-current="page" onclick="open()" href="#About" >Scroll Down</a><i class="fa-solid fa-computer-mouse"></i></button>
+              <button type="button" class="btn" id="sbtn"> <a class="nav" aria-current="page"  href="#About"onclick="redirectToOtherPartOfPage()" >Scroll Down</a><i class="fa-solid fa-computer-mouse"></i></button>
   
             </div>
           </div>
@@ -419,9 +419,8 @@
               <div class="col">
                 <div class="email">
                   <h4>Messsage</h4>
-                  <form id="Feedbackform" onsubmit="ValidateEmail()">
+                  <form id="Feedbackform" onsubmit="ValidateEmail()" action="#">
                     <div class="mb">
-                      
                       <label for="exampleInputEmail1" class="form-label">Email address</label>
                       <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" required placeholder="abc@gmail.com">
                       <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
@@ -435,10 +434,11 @@
                         <label class="form-check-label" for="exampleCheck1">Check me out</label>
                       </div> -->
                     <div class="mb-3">
-                      <label for="exampleInputfeedback" class="form-label">Write your message here..</label>
-                      <textarea type="text" class="form-control" id="Feedback" aria-describedby="emailHelp" required placeholder="Write your messages here.."></textarea>
+                      <label for="exampleInputfeedback" id="Feedback" class="form-label">Write your message here..</label>
+                      <textarea type="text" oninput="checkWordCount()" class="form-control" id="Feedback" aria-describedby="emailHelp" required placeholder="Write your messages here.." ></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary" onsubmit="mssgcheck()">Submit</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <p id="message"></p>
                   </form>
                 </div>
               </div>
@@ -446,10 +446,10 @@
                 <div class="social">
                   <h4>Connect me</h4>
                   <ul class="socials">
-                    <li><a href="https://web.whatsapp.com/"><i class="fa fa-whatsapp"></i></a></li>
-                    <li><a href="#www.google.com"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://www.instagram.com/anshushetty2003/"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/anshu-shetty-0897b3228/"><i
+                    <li><a href="https://web.whatsapp.com/"target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+                    <li><a href="https://github.com/AnshuShetty?tab=repositories" target="_blank"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://www.instagram.com/anshushetty2003/"target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/anshu-shetty-0897b3228/"target="_blank"><i
                           class="fa fa-linkedin-square"></i></a></li>
                   </ul>
                 </div>
