@@ -22,12 +22,15 @@
 }
 
 .navbar li:hover {
-    background:linear-gradient(25deg, #ff4242, #ff0d49, #07116d);
+    background:linear-gradient(25deg, #ff4242, #ff0d49, #0c155f);
     /* text-decoration: underline  3px solid rgb(255, 43, 78); */
-    border-radius: 2px;
-    animation-name: navbarhover;
+    border-radius: 20px;
+    transition-delay: 1s;
+    transition:  1s;
+    
     
 }
+
 .navbar-dark .navbar-toggler-icon{
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28258, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
@@ -131,7 +134,7 @@
         transform: scale(0.2);
     }
     to{
-        
+        transform: scale(100%);
     }
 }
 .container-sm img{
