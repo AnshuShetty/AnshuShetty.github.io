@@ -86,8 +86,9 @@
 .aboutme1 .container-md {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
+    flex: 2 2 200px;
 }
 .aboutme1 .container-md .pic{
     display: flex;
@@ -871,6 +872,7 @@ h5{
     /* flex: 1 1 200px; */
     /* width: 50%; */
     height: auto;
+    
 }
  .sercol .card-body{
     /* display: flex;
@@ -885,6 +887,7 @@ h5{
     margin: 10px;
     border-radius: 20px;
     overflow: hidden;
+    box-shadow: 3px 0 10px black;
 }
 .sercol :hover{
     background: rgba(95, 25, 25, 0.945);
@@ -915,21 +918,18 @@ h5{
 }
 @media (max-width: 600px){
     .sercol .card-body h4 i{
-        color:  #ff0846;
+        color:  #ffa5bc;
         margin: 4px;
     }
-    .sercol .container{
+    #services .sercol {
         display: flex;
         justify-content: center;
-        flex-direction: column;
-        column-count: 2;
-        width: auto;
-        color: white;
-        background-color: #0f1218;
-        margin: 0;
-        height: 100%;
-        margin: 10px;
-        border-radius: 20px;
-        overflow: hidden;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        /* flex: 1 1 200px; */
+        /* width: 50%; */
+        height: auto;
+        
     }
+    
 }
