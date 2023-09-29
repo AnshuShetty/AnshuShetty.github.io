@@ -82,6 +82,24 @@ formElement.addEventListener("submit", (event) => {
   event.preventDefault();
 
   // Display the message that the form has been submitted.
-  messageElement.innerHTML = "Form submitted!";
+  messageElement.innerHTML = "Message sent!";
 });
+
+function downloadPDF() {
+  // Get the path of the PDF file.
+  const pdfPath = "file:///D:/vscode/Projects/bootstrap/Images/Anshu%20_Resume.pdf";
+
+  // Create a new anchor element.
+  const anchor = document.createElement("a");
+
+  // Set the anchor element's href attribute to the path of the PDF file.
+  anchor.href = pdfPath;
+
+  // Set the anchor element's download attribute to the filename of the PDF file.
+  anchor.download = "my_pdf.pdf";
+
+  // Click the anchor element to download the PDF file.
+  anchor.click();
+}
+
 
