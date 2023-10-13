@@ -98,11 +98,17 @@
           </div>
           <div class="col-md ">
             <div class="aboutme">
-             
+              <!-- <p>Hi there</p> -->
               <h2>ANSHU SHETTY</h2>
-              <H4>Student of</H4>
-              <p>ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING</p>
-              <button type="button" class="btn" id="sbtn"> <a class="nav" aria-current="page"  href="#About"onclick="redirectToOtherPartOfPage()" >Scroll Down <i class="fa-solid fa-computer-mouse"></i></a></button>
+              <H4>Student of Canara engineering College</H4>
+              <div class="icon">
+                <a href="https://www.instagram.com/anshushetty2003/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/AnshuShetty?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/anshu-shetty-0897b3228/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJvpbZGsBCZGlmjMkzDQWgrpGszhWZhrNqSfCzfjhRczmgpQnrVPSdFjdGczCSkhkhcQmzg" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+              <a href="https://www.skype.com/en/" target="_blank"><i class="fa-brands fa-skype"></i></a>
+              </div>
+              <button type="button" class="btn" id="sbtn"> <a class="nav" aria-current="page"  href="#About"onclick="redirectToOtherPartOfPage()" >See more.. <i class="fa-solid fa-computer-mouse"></i></a></button>
   
             </div>
           </div>
@@ -137,7 +143,7 @@
                     Canara Engineering College. I love to develop  websites, which
                     helps the people to use . I love to explore and learn new Technologies. I love to design. Looking to connect with engineers and looking for the perfect job where i can make use of
                     my skills and develop my career.</P>
-                    <button type="button" class="btn"onclick="downloadPDF()"><a href="./Images/Anshu Resume.pdf" target="_blank">Resume</a><i class="fa-solid fa-file"></i></button>
+                    <button type="button" class="btn"onclick="downloadPDF()"><a href="./Images/Anshu _Resume.pdf" target="_blank">Resume</a><i class="fa-solid fa-file"></i></button>
                 </div>
               </div>
               <!-- <div class="container-sm" style="color: white;">
@@ -371,17 +377,17 @@
         <div class="sercol">
           <div class="card-body">
             <h4><i class="fa-solid fa-code"></i>Web Development</h4>
-            <p>I have a huge interest in the field of web development and web designing where i can be more updated in this field.</p>
-            <a href="">Explore</a>
+            <p>I give <b>WEB</b> based services(frontend) for the client. If they require any services from me let them Contact. Contact information is pasted below. You can Explore my services below.</p>
+            <a href="" target="_blank">Explore</a>
           </div>
           <div class="card-body">
             <h4><i class="fa-regular fa-pen-to-square"></i>UI/UX Design</h4>
-            <p>I have a huge interest in the field of UI UX where i am able to build the prototypes with beautiful design sets and likly looking into it.</p>
-            <a href="">Explore</a>
+            <p>You may get a <b>UI/UX</b> based services here. Designing the APPs and WEB pages. For more Information Contact me.</p>
+            <a href="https://www.figma.com/files/recents-and-sharing/recently-viewed?fuid=1183016830733472639" target="_blank">Explore</a>
           </div>
           <div class="card-body">
             <h4><i class="fa-solid fa-pen-nib"></i>Graphic Designer</h4>
-            <p>I have a huge interest in the field of Graphic designing where i develop lots of creative posters flyers logos and some illustrations. so i am looking forward into it.</p><a href="">Explore</a>
+            <p>You may get a <b>Graphic Design</b> based services here. Designing the Logos posters Flyers and so many things. For more Information Contact me.</p><a href="https://www.canva.com/projects" target="_blank">Explore</a>
           </div>
         </div>
         
@@ -445,7 +451,7 @@
               <div class="col">
                 <div class="email">
                   <h4>Messsage</h4>
-                  <form id="Feedbackform" onsubmit="ValidateEmail()" action="#">
+                  <form id="Feedbackform" onsubmit="ValidateEmail()" onsubmit="checkWordCount()"action="#">
                     <div class="mb">
                       <label for="exampleInputEmail1" class="form-label">Email address</label>
                       <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" required placeholder="abc@gmail.com">
@@ -461,7 +467,7 @@
                       </div> -->
                     <div class="mb-3">
                       <label for="exampleInputfeedback" id="Feedback" class="form-label">Write your message here..</label>
-                      <textarea type="text" oninput="checkWordCount()" class="form-control" id="Feedback" aria-describedby="emailHelp" required placeholder="Write your messages here.." ></textarea>
+                      <textarea type="text"  class="form-control" id="Feedback" aria-describedby="emailHelp" required placeholder="Write your messages here.." ></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                     <p id="message"></p>
