@@ -50,7 +50,7 @@
     }
 }
 .navbar li:hover {
-    background:linear-gradient(25deg, #ff4242, #3d3d3d, #0c155f);
+    background:linear-gradient(25deg, #ff1447, #0c155f);
     /* text-decoration: underline  3px solid rgb(255, 43, 78); */
     border-radius: 10px;
     transition-delay: 1s;
