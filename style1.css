@@ -25,7 +25,7 @@
 }
 .navbar .container-fluid {
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .navbar a img{
@@ -37,13 +37,13 @@
 @media screen and (max-width: 600px){
     .navbar .container-fluid a{
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         flex-wrap: wrap;
+      
     }
     .navbar a img{
-        width: 70%;
-        height: 70%;
-       
+        width: 50%;
+        height: 50%;
     }  
     .body{
         margin-top: 70px;
@@ -493,8 +493,8 @@ footer {
     /* width: 500px; */
     display: block;
     /* grid-template-columns: 1fr 1fr ; */
-    /* background-color: #ff4d4d; */
-    background: linear-gradient(75deg , rgb(46, 12, 20), rgb(102, 10, 41), #07116d);
+    background-color: #090b22;
+    /* background: linear-gradient(75deg , rgb(46, 12, 20), rgb(102, 10, 41), #07116d); */
     color: white;
 }
 
@@ -504,7 +504,7 @@ footer {
     font-size: xx-large;
     font-weight: bolder;
     text-align: center;
-    border-bottom: 1px solid rgb(252, 255, 54);
+    border-bottom: 1px solid rgb(255, 27, 65);
     /* font-style: italic; */
 }
 
@@ -549,7 +549,8 @@ footer {
 
 .email h4 {
     /* padding-top: 20px; */
-    color: rgb(253, 255, 128);
+    /* color: rgb(253, 255, 128); */
+    color: rgb(255, 27, 65);
     display: flex;
     justify-items: center;
     text-align: center;
@@ -559,7 +560,8 @@ footer {
 .myabout h4 {
     padding-top: 20px;
     font-size: 30px;
-    color: rgb(253, 255, 128);
+    /* color: rgb(253, 255, 128); */
+    color: rgb(255, 27, 65);
     display: flex;
     justify-content: left;
     text-align: center;
@@ -635,7 +637,8 @@ footer {
 }
 
 .social h4 {
-    color: rgb(253, 255, 128);
+    /* color: rgb(253, 255, 128); */
+    color: rgb(255, 27, 65);
     text-align: center;
     justify-content: center;
     font-size: 30px;
@@ -669,7 +672,7 @@ footer {
     margin-bottom: 0%;
     justify-content: last baseline;
     font-size: 15px;
-    color: rgb(255, 255, 115);
+    color: rgb(255, 27, 65);
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
 }
