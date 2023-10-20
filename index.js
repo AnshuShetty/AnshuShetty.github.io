@@ -10,8 +10,7 @@ function ValidateEmail(exampleInputEmail)
     return false;
   }
   else{
-
-    alert("Valid email id");
+    alert("valid message")
     return true;
   }
 
@@ -76,8 +75,9 @@ function checkWordCount() {
 
 const formElement = document.getElementById("Feedbackform");
 const messageElement = document.getElementById("message");
-
 formElement.addEventListener("submit", (event) => {
+  alert("do you want to send ");
+
   // Prevent the form from submitting.
   event.preventDefault();
 
