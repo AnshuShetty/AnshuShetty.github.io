@@ -25,7 +25,7 @@
   <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark ">
     <div class="container-fluid justify-content-center">
 
-      <a class="navbar-brand" href="#"><img src="./Images/Group 13.png" alt="mylogo"></a>
+      <a class="navbar-brand" href="#"><img src="./Images/Group 14.png" alt="mylogo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       
@@ -102,11 +102,11 @@
               <h2>ANSHU SHETTY</h2>
               <H4>Student of Canara engineering College</H4>
               <div class="icon">
-                <a href="https://www.instagram.com/anshushetty2003/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.instagram.com/design_crush.23/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://github.com/AnshuShetty?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/anshu-shetty-0897b3228/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
               <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJvpbZGsBCZGlmjMkzDQWgrpGszhWZhrNqSfCzfjhRczmgpQnrVPSdFjdGczCSkhkhcQmzg" target="_blank"><i class="fa-regular fa-envelope"></i></a>
-              <a href="https://www.skype.com/en/" target="_blank"><i class="fa-brands fa-skype"></i></a>
+              <a href="" target="_blank"><i class="fa-solid fa-desktop"></i></a>
               </div>
               <button type="button" class="btn" id="sbtn"> <a class="nav" aria-current="page"  href="#About"onclick="redirectToOtherPartOfPage()" >See more.. <i class="fa-solid fa-computer-mouse"></i></a></button>
   
@@ -131,19 +131,24 @@
           <section id="container-md">
       
             <div class="container-md">
-              <h4>ABOUT</h4>
+              <div class="about-head">
+                <h4>ABOUT</h4>
+              </div>
               <div class="row">
-                <div class="col">
+                <!-- <div class="col"> -->
                   <div class="pic">
                     <img src="./Images/Anshu1 png.png" alt="Anshu photo">
                   </div>
-                </div>
+                <!-- </div> -->
                 <div class="col">
                   <P>This is <span>Anshu Shetty</span>  I am passionate Web developer.I am pursuing B.E in ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING in
                     Canara Engineering College. I love to develop  websites, which
                     helps the people to use . I love to explore and learn new Technologies. I love to design. Looking to connect with engineers and looking for the perfect job where i can make use of
                     my skills and develop my career.</P>
-                    <button type="button" class="btn"onclick="downloadPDF()"><a href="./Images/Anshu _Resume.pdf" target="_blank">Resume</a><i class="fa-solid fa-file"></i></button>
+                    
+                </div>
+                <div class="about-btn">
+                  <button type="button" class="btn"onclick="downloadPDF()"><a href="./Images/Anshu _Resume.pdf" target="_blank">Resume</a><i class="fa-solid fa-file"></i></button>
                 </div>
               </div>
               <!-- <div class="container-sm" style="color: white;">
@@ -377,17 +382,19 @@
         <div class="sercol">
           <div class="card-body">
             <h4><i class="fa-solid fa-code"></i>Web Development</h4>
-            <p>I give <b>WEB</b> based services(frontend) for the client. If they require any services from me let them Contact. Contact information is pasted below. You can Explore my services below.</p>
+            <p>
+              I provide <b>web-based services</b> (frontend) for clients. If they require any services from me, they can contact me using the information below. You can explore my services below</p>
             <a href="" target="_blank">Explore</a>
           </div>
           <div class="card-body">
             <h4><i class="fa-regular fa-pen-to-square"></i>UI/UX Design</h4>
-            <p>You may get a <b>UI/UX</b> based services here. Designing the APPs and WEB pages. For more Information Contact me.</p>
+            <p><b>UI/UX design</b> services are available here. We design mobile apps and web pages, posters, Logos. For more information, please contact me.</p>
             <a href="https://www.figma.com/files/recents-and-sharing/recently-viewed?fuid=1183016830733472639" target="_blank">Explore</a>
           </div>
           <div class="card-body">
             <h4><i class="fa-solid fa-pen-nib"></i>Graphic Designer</h4>
-            <p>You may get a <b>Graphic Design</b> based services here. Designing the Logos posters Flyers and so many things. For more Information Contact me.</p><a href="https://www.canva.com/projects" target="_blank">Explore</a>
+            <p>
+              <b>Graphic design</b> services are available here. We design logos, posters, flyers, and much more. For more information, please contact us. </p><a href="https://www.canva.com/projects" target="_blank">Explore</a>
           </div>
         </div>
         
@@ -470,8 +477,6 @@
                 <div class="myabout">
                   <h4>About me</h4>
                   <li>Name: Anshu shetty</li>
-                  <li>Branch: AIML</li>
-                  <li>Semester: 3rd</li>
                   <li><i class="fa-solid fa-location-dot"></i>: Daivagudde Bantwal</li>
                   <li><i class="fa-solid fa-phone"></i>: 8217406323</li>
                   <li><i class="fa-regular fa-envelope"></i>: anshushetty2003@gmail.com
@@ -481,7 +486,7 @@
               <div class="col">
                 <div class="email">
                   <h4>Messsage</h4>
-                  <form id="Feedbackform" onsubmit="ValidateEmail()" onsubmit="checkWordCount()"action="#">
+                  <form id="Feedbackform" onsubmit="ValidateEmail()" action="#" name="submit-to-google-sheet">
                     <div class="mb">
                       <label for="exampleInputEmail1" class="form-label">Email address</label>
                       <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" required placeholder="abc@gmail.com">
@@ -497,10 +502,10 @@
                         <label class="form-check-label" for="exampleCheck1">Check me out</label>
                       </div> -->
                     <div class="mb-3">
-                      <label for="exampleInputfeedback" id="Feedback" class="form-label">Write your message here..</label>
+                      <label for="exampleInputfeedback"class="form-label">Write your message here..</label>
                       <textarea type="text"  class="form-control" id="Feedback" aria-describedby="emailHelp" required placeholder="Write your messages here.." ></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary" onclick="checkWordCount()">Submit</button>
                     <p id="message"></p>
                   </form>
                 </div>
@@ -511,7 +516,7 @@
                   <ul class="socials">
                     <li><a href="https://web.whatsapp.com/"target="_blank"><i class="fa fa-whatsapp"></i></a></li>
                     <li><a href="https://github.com/AnshuShetty?tab=repositories" target="_blank"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://www.instagram.com/design_crush.23/ "target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.instagram.com/anshushetty2003/"target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
                     <li><a href="https://www.linkedin.com/in/anshu-shetty-0897b3228/"target="_blank"><i
                           class="fa fa-linkedin-square"></i></a></li>
                   </ul>
@@ -544,8 +549,7 @@
             speed: 400,
           
         });
-
+        
     </script>
 </body>
-
 </html>
