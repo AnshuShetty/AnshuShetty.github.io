@@ -1,48 +1,15 @@
-
-function ValidateEmail(exampleInputEmail) 
-{
+function validateEmail() {
   var email = document.getElementById('exampleInputEmail').value;
-  var emailregex= /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  //var emailregex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  var emailregex = /^[a-z0-9]+@[a-z]+\.[a-z]{2,3}$/;
 
- if(!emailregex.test(email))
-  {
-    alert("You have entered an invalid email address!");
+  if (!emailregex.test(email)) {
+    alert('Invalid email!');
     return false;
-  }
-  else{
-    alert("valid message")
+  } else {
     return true;
   }
-
 }
-function mssgcheck(){
-  var mssg = document.getElementById('Feedback').value;
-  if(!mssg.length<5){
-    alert("Write atleast one Message!")
-  }
-  
-}
-// const email = document.getElementById('exampleInputEmail');
-// const feedback = document.getElementById('Feedback')
-// const form = document.getElementById('Feedbackform')
-// const errormssg = document.getElementById('error')
-// form.addEventListener('submit', (e) => {
-//   let messages=[]
-//   if(feedback.value.length<=4){
-//     messages.push('wirte atleast 5 words')
-//   }
-//   if(messages.length>=0){
-//     e.preventDefault()
-//     errormssg.innerText = messages.push('hi');
-//   }
-// })
-// function open(About){
-
-//   const btn = document.querySelector('.btn');
-//   btn.addEventListener('click', () =>{
-//    document.getElementsByTagName('About');
-//   })
-// }
 const linkElement = document.getElementById("sbtn");
 
 linkElement.addEventListener("click", redirectToOtherPartOfPage);
@@ -69,7 +36,7 @@ function checkWordCount() {
   // If the word count is less than 5, alert the user.
   if (wordCount < 5) {
     alert("Write atleast 10 words");
-    console.log("write")
+    console.log("write");
   }
 }
 
@@ -83,11 +50,12 @@ formElement.addEventListener("submit", (event) => {
 
   // Display the message that the form has been submitted.
   messageElement.innerHTML = "Message sent!";
+  document.getElementById('Feedbackform').reset();
 });
 
 function downloadPDF() {
   // Get the path of the PDF file.
-  const pdfPath = "file:///D:/vscode/Projects/bootstrap/Images/Anshu%20_Resume.pdf";
+  const pdfPath = "Images/Anshu%20_Resume.pdf";
 
   // Create a new anchor element.
   const anchor = document.createElement("a");
@@ -101,5 +69,24 @@ function downloadPDF() {
   // Click the anchor element to download the PDF file.
   anchor.click();
 }
+// function storeMessage(email, message) {
+//   var spreadsheetId = 'AKfycbxR7LFNxFLJSCUqijh2DdOfn57uJ3KFFJMWALUkTZshdzm0uuo3zXyAYTN_cLYd7R0jDQ';
+//   var range = 'Sheet1!A:B';
+//   var values = [[email, message]];
+
+//   var request = gapi.client.sheets.spreadsheets.values.append({
+//     spreadsheetId: spreadsheetId,
+//     range: range,
+//     valueInputOption: 'USER_ENTERED',
+//     resource: {
+//       values: values,
+//     },
+//   });
+
+//   request.execute(function(response) {
+//     console.log('Message stored successfully.');
+//   });
+// }
+
 
 
