@@ -37,7 +37,7 @@
 }
 @media screen and (max-width: 600px){
     .navbar .container-fluid a{
-        width:70%;
+        width:90%;
         height: 100%;
         display: flex;
         justify-content: center;
