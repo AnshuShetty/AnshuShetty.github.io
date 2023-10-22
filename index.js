@@ -55,7 +55,7 @@ formElement.addEventListener("submit", (event) => {
 
 function downloadPDF() {
   // Get the path of the PDF file.
-  const pdfPath = "Images/Anshu%20_Resume.pdf";
+  const pdfPath = "Images/Anshu Resume.pdf";
 
   // Create a new anchor element.
   const anchor = document.createElement("a");
