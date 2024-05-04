@@ -217,14 +217,14 @@ display: flex;align-items: center;
         transform: translateY(40px); /* End position */
     }
 }
-.canva2 .images2{
+.canva2 {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
     margin: 20px;
 }
-.designs .canva2 .images2 img{
+.designs .canva2  img{
     width: 20%;
     height: auto;
     margin: 10px;padding: 10px;
@@ -334,6 +334,7 @@ display: flex;align-items: center;
 }
 
 
+
 /* Default styles */
 /* Add your existing CSS here */
 
@@ -345,14 +346,20 @@ display: flex;align-items: center;
         min-height: 100vh;
     }
     .navbar-brand span {
-        display: none;
+        color: blue;
+        
     }
     .navbar-brand {
-        font-size: 1.5rem;
+        padding: 0;
+        width: 100%;
+        text-align: center;
     }
 
-    .navbar-toggler {
+    .navbar-toggler{
         font-size: 1.5rem;
+        color: white;
+        background-color: white;
+        display: none;
     }
 
     .navbar-nav {
@@ -388,15 +395,22 @@ display: flex;align-items: center;
         margin-top: 5rem; /* Adjust margin as needed */
         text-align: center;
         font-size: 24px; /* Adjust font size as needed */
+        padding-left: 0;
     }
-    
+    .info p{
+        font-size: 50px;
+        text-align: center;
+    }
 
     .social {
         text-align: center;
+        display: flex;justify-content: center;
+        margin-top: 5rem;
     }
 
     .details {
         text-align: center;
+        margin-top: 70px;
     }
 
     /* About Me Section */
@@ -419,6 +433,10 @@ display: flex;align-items: center;
         text-align: center;
     }
 
+    .canva{
+        display: grid;
+    }
+
     .canva .carousel-inner img {
         width: 100%;
         height: auto;
@@ -430,13 +448,12 @@ display: flex;align-items: center;
         text-align: center;
     }
 
-    .canva2 .images2 {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-        gap: 10px;
+    .designs .canva2  {
+        display: flex;justify-content: center;align-items: center;
+       flex-direction: column;flex-wrap: wrap;
     }
 
-    .canva2 .images2 img {
+    .designs .canva2  img {
         width: 100%;
         height: auto;
     }
@@ -444,5 +461,53 @@ display: flex;align-items: center;
     /* Footer */
     .foot {
         font-size: 14px;
+    }
+    .container h2{
+        font-size: 60px; max-width: 100%;
+    }
+    .canva h2{
+        font-size: 60px;
+    }
+    .logos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .logos img{
+        width: 50%;
+    }
+    .container-md{
+        display: flex;justify-content: center;align-items: center;
+        flex-direction: column;flex-wrap: wrap;
+    }
+    .container-md .slogan {
+        padding: 10px;
+    }
+    .container-md .slogan p{
+        font-size: 20px;
+    }
+    .container-md .pallate img{
+        width: 100%;height: auto;
+    }
+    .container-lg{
+        margin-top: 12rem;
+        display: flex;justify-content: center;align-items: center;
+        flex-direction: column;flex-wrap: wrap;
+    }
+    .container-lg .about p{
+        font-size: 20px;
+    }
+    .container-lg .design img{
+        width: 100%;height: auto;
+    }
+    .container .row{
+        display: flex;justify-content: center;align-items: center;
+        flex-wrap: wrap; flex-direction: column;
+    }
+    .container .row .col img{
+        width: 50%;
+        height: auto;
     }
 }
