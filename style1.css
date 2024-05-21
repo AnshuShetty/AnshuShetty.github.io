@@ -917,7 +917,7 @@ footer {
     color: rgba(255, 255, 255, 0.05);
 }
 .projects .container .card .content h3{
-    background: -webkit-linear-gradient(30deg,#ff0037, #4936f7);
+    background: -webkit-linear-gradient(30deg,#161515a4, #4936f7);
   -webkit-background-clip: text;
   /* background-clip:border-box; */
   -webkit-text-fill-color: transparent;
