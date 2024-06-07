@@ -1,5 +1,5 @@
-# project Title
-My Portfolio
+# My Portfolio
+Anshu Shetty
 
 # Description
 This is my portfolio webpage built for my practise ,which contains all the details and required information about myself. Tjis website is static webpage ehich doesnot contian any backend or database.
