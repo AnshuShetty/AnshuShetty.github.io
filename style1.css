@@ -5,12 +5,24 @@
     
 }
 
+
 .body{
     padding-top: 60px;
     background-color: #171727;
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.body #preloader {
+    background-image: url(Images/loaderGif.gif); /* Corrected background-image property */
+    background-repeat: no-repeat; /* Set repeat to no-repeat */
+    background-position: center; /* Center the background image */
+    background-color: #161920;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
 }
 
 .navbar{
@@ -35,6 +47,16 @@
     margin-left: 10px;
     
 }
+@media (max-width: 1024px) {
+    .container-xxl {
+        background-image: none; /* Remove background image */
+        background-color: #171727; /* Set a fallback background color */
+    }
+    .container-xxl::before {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 600px){
     .container-xxl .row{
         display: flex;
@@ -73,6 +95,14 @@
     }
 }
 @media (max-width: 768px) {
+    .body {
+        padding: 10px;
+        margin: 0 auto; /* Center content horizontally */
+        max-width: 100%; /* Ensure it doesn't exceed the screen width */
+        display: flex; /* Enable flexbox for alignment */
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center align content horizontally */
+    }
     .container-xxl .row{
         display: flex;
         justify-content: center;
@@ -81,6 +111,24 @@
     }
     .home .container-xxl{
         background-image: none;
+    }
+    .container-xxl::before {
+        display: none;
+    }
+    .home .container-xxl .col-md{
+        margin-top: 3rem;
+    }
+    .home .container-xxl .col-md img {
+        /* padding:0; */
+        margin-top: 0.8rem;
+        width: 60%;
+        height: auto;
+        display: block;
+        justify-content: center;
+        background: linear-gradient(30deg,rgba(204, 63, 154, 1),rgb(255, 44, 44));
+        border-radius: 30% 70% 70% 30% / 30% 30% 60% 70%;
+        border: 3px solid rgb(255, 255, 255);
+        box-shadow: 0px 0px 30px rgb(225, 0, 60);
     }
     .col-md .aboutme p {
         margin-top: 2rem;
@@ -97,6 +145,9 @@
        letter-spacing: normal;
        font-weight: 600;
         
+    }
+    .myskills{
+        width: 400px;
     }
     .navbar .container-fluid a{
         width:70%;
@@ -1083,6 +1134,7 @@ h5{
     }
     
 }
+
 
 .popup {
     position: fixed;
