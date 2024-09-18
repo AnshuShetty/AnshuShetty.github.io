@@ -250,9 +250,13 @@
     margin: 8px;
     shape-rendering: crispEdges;
     padding: 10px;
-    border: 1px solid rgb(255, 49, 94);
+    /* border: 2px solid rgb(255, 49, 94); */
     border-radius: 100%;
     /* width: 50%;   */
+}
+.container-xxl .col-md .icon a  :hover{
+    background-color: rgb(255, 49, 94);
+    color: rgb(255, 255, 255);
 }
 .aboutme1 {
     padding-top: 120PX;
@@ -1228,3 +1232,96 @@ h5{
         transform: translateX(0px);
     }
 }
+
+.certificates h2{
+    background:linear-gradient(to right, #ff4242, #ff0d49, #07116d);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: grid;
+    /* width: 600px; */
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    text-align: center;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center; /* Centers the carousel horizontally */
+    align-items: center; /* Centers the carousel vertically (if needed) */
+    margin: 0 auto; /* Ensures the carousel is centered on the page */
+  }
+  
+  .carousel-inner {
+    width: 100%;
+    max-width: 800px; /* Set a maximum width for the carousel */
+  }
+  
+  .carousel-item img {
+    display: block;
+    margin: 0 auto;
+    width: 100%; /* Makes the images take up full width of the container */
+    height: auto; /* Maintain the image aspect ratio */
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(1); /* Makes the control icons visible on dark backgrounds */
+  }
+  
+/* Home Typewriter Animation */
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  .typewriter {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid;
+    font-family: 'Courier', monospace;
+    animation: typing 3s steps(22) 1s infinite alternate, blink 0.75s step-end infinite;
+  }
+  
+  @keyframes textSwitch {
+    0%, 25% {
+      content: 'web developer';
+    }
+    50%, 75% {
+      content: 'Graphic Designer';
+    }
+    80%,100% {
+      content: 'Machine Learning learner';
+    }
+  }
+  
+  .typewriter::after {
+    content: 'web developer';
+    animation: textSwitch 6s steps(1) infinite;
+  }
+  
+  /* General Styling */
+  .aboutme {
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+  .aboutme .typewriter {
+    font-weight: bold;
+    color: rgb(255, 31, 69);
+    font-size: 1.8rem;
+  }
+  
+  
