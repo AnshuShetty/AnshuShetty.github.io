@@ -27,6 +27,9 @@
 </head>
 
 <body class="body">
+
+  <div id="preloader"></div>
+
   <!-- <span>A</span>nshu Shetty -->
   <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark ">
     <div class="container-fluid justify-content-center">
@@ -102,7 +105,8 @@
           
           <div class="col-md ">
             <div class="aboutme">
-              <p>Hi There, I'm<br><span>ANSHU SHETTY</span><br>a passionate Web Developer.</p>
+              <p>Hi There, I'm<br><span>ANSHU SHETTY</span><br>a passionate</p>
+              <span class="typewriter"></span>
               <div class="icon">
                 <a href="https://www.instagram.com/digital_._ink" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://github.com/AnshuShetty?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -394,6 +398,7 @@
             <!-- Content here -->
             <div class="head">
               <h4>PROJECTS</h4>
+
             </div>
             <!-- <p>Yet to come...</p> -->
             <!-- <div class="container-lg" style="border: none; padding-top:none;" > -->
@@ -475,9 +480,40 @@
           </div>
         </div>
       </section>
+      <section>
+        <div class="certificates  anim">
+          <h2>Achievements/Certifcations</h2>
+          
+
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="Images/Anshu Shetty AJ Hacathon_page-0001.jpg" class="d-block w-75" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Images/CertificateOfCompletion_Figma for UX Design_page-0001.jpg" class="d-block w-75" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Images/Cybersecurity certificate_page-0001.jpg" class="d-block w-75" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Images/Coursera 4AMVNH5CMA9D_page-0001.jpg" class="d-block w-75" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+        </div>
+      </section>
       <section id="Contact">
         <footer>
-          <div class="fcontents anim">
+          <div class="fcontents ">
             <div class="heading">CONTACT</div>
             <div class="row">
               <div class="col">
@@ -517,7 +553,7 @@
                   <ul class="socials">
                     <li><a href="https://web.whatsapp.com/"target="_blank"><i class="fa fa-whatsapp"></i></a></li>
                     <li><a href="https://github.com/AnshuShetty?tab=repositories" target="_blank"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://www.instagram.com/anshushetty_/"target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.instagram.com/anshu._.shetty/"target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
                     <li><a href="https://www.linkedin.com/in/anshu-shetty-0897b3228/"target="_blank"><i
                           class="fa fa-linkedin-square"></i></a></li>
                   </ul>
@@ -569,5 +605,19 @@
         });
         
     </script>
+
+    <!-- preloader -->
+     <!-- Preloader Script -->
+<!-- Preloader Script -->
+<script>
+  window.addEventListener("load", function() {
+      var loader = document.getElementById("preloader");
+      setTimeout(function() {
+          loader.style.display = "none";
+      }, 3000); // 3000 milliseconds = 3 seconds
+  });
+</script>
+
+
 </body>
 </html>
