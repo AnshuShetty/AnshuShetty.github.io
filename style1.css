@@ -14,16 +14,7 @@
     flex-direction: column;
 }
 
-.body #preloader {
-    background-image: url(Images/loaderGif.gif); /* Corrected background-image property */
-    background-repeat: no-repeat; /* Set repeat to no-repeat */
-    background-position: center; /* Center the background image */
-    background-color: #161920;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-}
+
 
 .navbar{
     background: linear-gradient(to right, rgb(29, 9, 14), rgb(21, 21, 51));
@@ -93,6 +84,9 @@
         flex-wrap: wrap;
         flex-direction: column;
     }
+    .certificates h2{
+        font-size: 28px;
+    }
 }
 @media (max-width: 768px) {
     .body {
@@ -148,6 +142,8 @@
     }
     .myskills{
         width: 400px;
+        padding: 20px;
+        
     }
     .navbar .container-fluid a{
         width:70%;
@@ -179,6 +175,9 @@
         /* width: 50%; */
         height: auto;
         
+    }
+    .certificates h2{
+        font-size: 30px;
     }
   }
 .navbar li:hover {
@@ -849,26 +848,27 @@ footer {
     
     /* padding-left:20px; */
     padding-top: 60px;
-    
+
+  margin: 0 auto;
 }
 
-.myskills .skillsrow .row .col {
+/* .myskills .skillsrow .row .col {
     color: #ff4545;
     padding: 60px;
     display: flex;
     justify-content: center;
-}
+} */
 
 .myskills   p {
     display: flex;
-    padding-left: 10px;
+    
     position: relative;
     top: 5px;
     justify-content: left;
     align-items: center;
     text-align: center;
     align-content: center;
-    color: wheat;
+    color: rgb(255, 255, 255);
     font-size: 20px;
     
 }
@@ -887,20 +887,23 @@ footer {
     font-size: 50px;
 }
 
-.myskills .skillsrow .col {
+/* .myskills .skillsrow .col {
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
     padding: 60px;
 
-}
+} */
 .myskills .container{
-    position: relative;
-    animation-name: anshu1;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    animation-delay: 1s;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 20px; /* Space between icons */
+        justify-items: center;
+      
+    /* position: relative; */
+    
 }
 @keyframes anshu1 {
     from{
@@ -912,6 +915,16 @@ footer {
     }
 }
 
+.myskills i {
+    font-size: 4rem;
+    color: #f1f1f1; /* Icon color */
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .myskills i:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
+    color: #ff5588; /* Darker shade on hover */
+  }
 .moredes{
     /* background-color: #121924; */
     display: flex;
@@ -1061,7 +1074,7 @@ h5{
     background:linear-gradient(rgb(255, 163, 191), rgb(145, 126, 243));
 }
 ::-webkit-scrollbar-thumb{
-    background: linear-gradient(#ff0d49, #07116d);
+    background: linear-gradient(#800020, #ff175d);
     border-radius: 10px;
 }
 #services .sercol {
@@ -1136,9 +1149,11 @@ h5{
     .home .container-xxl{
         background-image: none;
     }
+    .certificates h2{
+        font-size: 28px;
+    }
     
 }
-
 
 .popup {
     position: fixed;
@@ -1212,8 +1227,8 @@ h5{
     justify-content: center;
     align-items: center;
     align-content: center;
-    background-color: white;
-    border: 2px solid #ff4242;
+    /* background-color: white;
+    border: 2px solid #ff4242; */
 }
 
 .anim{
@@ -1271,12 +1286,16 @@ h5{
   }
   
 /* Home Typewriter Animation */
+/* Typewriter Animation */
 @keyframes typing {
-    from {
+    0% {
       width: 0;
     }
-    to {
+    50% {
       width: 100%;
+    }
+    100% {
+      width: 0;
     }
   }
   
@@ -1292,12 +1311,13 @@ h5{
     overflow: hidden;
     border-right: 2px solid;
     font-family: 'Courier', monospace;
-    animation: typing 3s steps(22) 1s infinite alternate, blink 0.75s step-end infinite;
+    animation: blink 0.75s step-end infinite;
   }
   
+  /* Text Switch Animation */
   @keyframes textSwitch {
     0%, 25% {
-      content: 'web developer';
+      content: 'FrontEnd developer';
     }
     50%, 75% {
       content: 'Graphic Designer';
@@ -1305,12 +1325,17 @@ h5{
     80%,100% {
       content: 'Machine Learning learner';
     }
+    100%, 150% {
+        content: 'Graphic Designer';
+    }
   }
   
   .typewriter::after {
-    content: 'web developer';
-    animation: textSwitch 6s steps(1) infinite;
+    display: inline-block;
+    animation: typing 5s steps(22) infinite, textSwitch 5s steps(1) infinite;
+    content: 'FrontEnd developer';
   }
+  
   
   /* General Styling */
   .aboutme {
@@ -1324,4 +1349,83 @@ h5{
     font-size: 1.8rem;
   }
   
+/* Preloader styles */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: url(https://static.vecteezy.com/system/resources/previews/002/923/747/large_2x/global-network-connection-world-map-point-and-line-composition-concept-of-global-business-illustration-free-vector.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover; */
+    background-color: #060713; /* Background color of preloader */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it stays on top of everything */
+  }
   
+  /* #preloader::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.762); 
+    z-index: -1;
+  } */
+  /* Logo styling */
+  .loader .logo {
+    width: 300px; /* Adjust size as needed */
+    height: auto;
+    animation: pulse 1.5s infinite; /* Add a pulsing animation for the logo */
+  }
+  
+  /* Spinner (optional) */
+  .loader .spinner {
+    border: 6px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #ff113d;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    animation: spin 1s linear infinite;
+    margin: 5px auto;
+  }
+  
+  /* Animation for logo pulsing */
+  @keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+  }
+  
+  /* Animation for spinner rotation */
+  @keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+  }
+  
+  /* Once content is loaded, show it and hide preloader */
+  #content {
+    display: none; /* Hidden initially */
+  }
+  
+  /* After preloader is hidden, content will be shown */
+  .show-content #content {
+    display: block;
+  }
