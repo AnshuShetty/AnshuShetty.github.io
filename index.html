@@ -28,7 +28,13 @@
 
 <body class="body">
 
-  <div id="preloader"></div>
+  <div id="preloader">
+    <div class="loader">
+        <img src="./Images/Group 14.png" alt="Logo" class="logo" />
+        <!-- You can add a loading animation if you want -->
+        <div class="spinner"></div>
+    </div>
+</div>
 
   <!-- <span>A</span>nshu Shetty -->
   <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark ">
@@ -150,10 +156,7 @@
                   </div>
                 <!-- </div> -->
                 <div class="col">
-                  <P>This is <span>Anshu Shetty</span>  a passionate Web developer.I am pursuing B.E in ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING in
-                    Canara Engineering College. I love to develop  websites, which
-                    helps the people to use . I love to explore and learn new Technologies. I love to design. Looking to connect with engineers and looking for the perfect job where i can make use of
-                    my skills and develop my career.</P>
+                  <P>I am <span>Anshu Shetty</span>, a driven and passionate individual pursuing a Bachelor of Engineering degree in Artificial Intelligence and Machine Learning at Canara Engineering College. With a strong interest in technology, I enjoy developing products that cater to the needs of users and make a positive impact. I am also eager to explore and learn new technologies, and I have a keen eye for design. I am looking to connect with like-minded engineers and seeking a challenging role that leverages my skills and provides opportunities for growth and career development.</P>
                     
                 </div>
                 <div class="about-btn">
@@ -175,55 +178,59 @@
       <section id="Skills">
         <div class="myskills anim">
           <h3>SKILLS</h3>
-          <div class="container text-center">
-            <div class="group">
-              <img src="./Images/python.png" alt="">
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
-              </div>
+          <div class="container ">
+            <div class="skill-logo">
+              <i class="fa-brands fa-java"></i>
+              <p>Java</p>
             </div>
-            <div class="group">
-              <img src="./Images/C.png" alt="">
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">60%</div>
-              </div>
+            <div class="skill-logo">
+              <i class="fa-brands fa-html5"></i>
+              <p>HTML5</p>
             </div>
-            <div class="group">
-              <img src="./Images/java-logo-1-removebg-preview.png" alt="">
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
-              </div>
+            <div class="skill-logo">
+              <i class="fa-brands fa-css3-alt"></i>
+              <p>CSS3</p>
             </div>
-            <div class="group">
-              <img src="./Images/html.png" alt="">
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
-              </div>
+            <div class="skill-logo">
+              <i class="fa-brands fa-js"></i>
+              <p>JavaScript</p>
             </div>
-            <div class="group">
-              <img src="./Images/css.png" alt="">
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%</div>
-              </div>
+            <div class="skill-logo">
+              <i class="fa-brands fa-figma"></i>
+              <p>Figma</p>
             </div>
-            <div class="group">
-              <img src="./Images/javascript-logo-transparent-logo-javascript-images-3.png" alt="">
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
-              </div>
+            <div class="skill-logo">
+              <i class="fa-brands fa-git"></i>
+              <p>Git</p>
             </div>
-            <div class="group">
-              <img src="./Images/photoshop.png" alt="">
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">65%</div>
-              </div>
+            <div class="skill-logo">
+              <i class="fa-brands fa-github"></i>
+              <p>Github</p>
             </div>
-            <div class="group">
-              <img src="./Images/figma.png" alt="">
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">70%</div>
-              </div>
+            <div class="skill-logo">
+              <i class="fa-brands fa-python"></i>
+              <p>Python</p>
             </div>
+            <div class="skill-logo">
+              <i class="fa-brands fa-react"></i>
+              <p>React JS</p>
+            </div>
+            <div class="skill-logo">
+              <i class="fa-brands fa-bootstrap"></i>
+              <p>BootStrap</p>
+            </div>
+            <div class="skill-logo">
+              <i class="fa-brands fa-node-js"></i>
+              <p>Node.JS</p>
+            </div>
+            <div class="skill-logo">
+              <i class="fa-solid fa-database"></i>
+              <p>SQL</p>
+            </div>        
+            <div class="skill-logo">
+              <img src="./Images/canvawhite.png" class="canva" alt="">
+              <p>Canva</p>
+            </div>        
           </div>
         </div>
       </section>
@@ -606,17 +613,17 @@
         
     </script>
 
-    <!-- preloader -->
-     <!-- Preloader Script -->
-<!-- Preloader Script -->
-<script>
-  window.addEventListener("load", function() {
-      var loader = document.getElementById("preloader");
-      setTimeout(function() {
-          loader.style.display = "none";
-      }, 3000); // 3000 milliseconds = 3 seconds
-  });
-</script>
+ <!-- preloader -->
+  <script>
+    // JavaScript to handle preloader
+    window.addEventListener("load", function () {
+    setTimeout(function() {
+        const preloader = document.getElementById('preloader');
+        preloader.style.display = 'none';
+        document.body.classList.add('show-content');
+    }, 2000); // Delay of 2 seconds to see the preloader in action
+});
+  </script>
 
 
 </body>
