@@ -63,7 +63,7 @@ function checkWordCount() {
 
 function downloadPDF() {
   // Get the path of the PDF file.
-  const pdfPath = "Images/Anshu RESUME.pdf";
+  const pdfPath = "Images/Anshu_Shetty_Resume.pdf";
 
   // Create a new anchor element.
   const anchor = document.createElement("a");
@@ -72,7 +72,7 @@ function downloadPDF() {
   anchor.href = pdfPath;
 
   // Set the anchor element's download attribute to the filename of the PDF file.
-  anchor.download = "Anshu Resume.pdf";
+  anchor.download = "Anshu_Shetty_Resume.pdf";
 
   // Click the anchor element to download the PDF file.
   anchor.click();
