@@ -2,11 +2,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
 }
 
 
 .body{
+    
     padding-top: 60px;
     background-color: #171727;
     display: flex;
@@ -49,6 +49,10 @@
 }
 
 @media screen and (max-width: 600px){
+    .navbar .container-fluid{
+        display: flex;
+        justify-content: space-between;
+    }
     .container-xxl .row{
         display: flex;
         justify-content: center;
@@ -84,18 +88,35 @@
         flex-wrap: wrap;
         flex-direction: column;
     }
+    .certificates{
+        margin: 0;
+        padding: 0;
+    }
     .certificates h2{
-        font-size: 28px;
+        display: none;
+    }
+    .certificates .carousel .carousel-inner .carousel-item img{
+        width: 100px;
+        margin: 0 auto;
+    }
+    .certificates .carousel-control-next{
+        display: none;
     }
 }
 @media (max-width: 768px) {
     .body {
+        margin-top: 20px;
+        width: 100%;
         padding: 10px;
         margin: 0 auto; /* Center content horizontally */
-        max-width: 100%; /* Ensure it doesn't exceed the screen width */
+       /* Ensure it doesn't exceed the screen width */
         display: flex; /* Enable flexbox for alignment */
         flex-direction: column; /* Stack content vertically */
         align-items: center; /* Center align content horizontally */
+        justify-content: center;
+    }
+    .navbar .navbar-toggler-icon{
+        color: white;
     }
     .container-xxl .row{
         display: flex;
@@ -159,9 +180,7 @@
         justify-content: center;
         /* height: 50%; */
     }  
-    .body{
-        margin-top: 20px;
-    }
+    
     .sercol .card-body h4 i{
         color:  #ffb6c8;
         margin: 4px;
@@ -322,7 +341,8 @@
     }
 } */
 .aboutme1 .container-md .pic img{
-    width: 200px;
+    width: auto;
+    height: 300px;
     display: flex;
     justify-content: center;
     background-color: pink;
@@ -896,11 +916,12 @@ footer {
 
 } */
 .myskills .container{
-
+        padding: 20px;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
         gap: 20px; /* Space between icons */
         justify-items: center;
+        justify-content: space-between;
       
     /* position: relative; */
     
@@ -1150,7 +1171,7 @@ h5{
         background-image: none;
     }
     .certificates h2{
-        font-size: 28px;
+        font-size: 10px;
     }
     
 }
@@ -1197,12 +1218,7 @@ h5{
     transform: translateY(0);
     pointer-events: all;
 }
-.myskills .container {
-    padding: 10px;
-    /* display: flex; */
-    justify-content: space-around;
-   
-}
+
 .myskills .group{
     margin-top: 10px;
     display: flex;
@@ -1222,7 +1238,7 @@ h5{
 .myskills img{
     height: 40px;
     display: flex;
-    /* padding: 10px; */
+    padding: 20px;
     margin: 0;
     justify-content: center;
     align-items: center;
