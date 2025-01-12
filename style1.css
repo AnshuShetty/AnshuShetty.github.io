@@ -594,8 +594,8 @@
     border-radius: 20px;
 }
 .mydesign .card {
-    border: 2px solid rgb(255, 129, 146);
-    box-shadow: 0px 0px 30px rgb(255, 18, 58);
+    /* border: 2px solid rgb(255, 129, 146); */
+    /* box-shadow: 0px 0px 30px rgb(255, 18, 58); */
     margin-top: 20px;
     display: flex;
     position: relative;
@@ -603,6 +603,7 @@
     align-content: center;
     cursor: pointer;
     overflow: hidden;
+    background-color: transparent;
 
 }
 .card .card-img-top{
@@ -936,7 +937,7 @@ footer {
     }
 }
 
-.myskills i {
+.myskills .container .skill-logo i {
     font-size: 4rem;
     color: #f1f1f1; /* Icon color */
     transition: transform 0.3s ease, color 0.3s ease;
@@ -944,8 +945,14 @@ footer {
   
   .myskills i:hover {
     transform: scale(1.2); /* Slight zoom on hover */
-    color: #ff5588; /* Darker shade on hover */
   }
+  .myskills .container .skill-logo img {
+    width: 70px; /* Ensure the image is visible */
+    height: auto;
+    max-width: 100%;
+    padding: 0;
+}
+
 .moredes{
     /* background-color: #121924; */
     display: flex;
