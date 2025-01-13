@@ -53,6 +53,9 @@
         display: flex;
         justify-content: space-between;
     }
+    .home{
+        background-image: none;
+    }
     .container-xxl .row{
         display: flex;
         justify-content: center;
@@ -117,6 +120,9 @@
     }
     .navbar .navbar-toggler-icon{
         color: white;
+    }
+    .home{
+        background: none;
     }
     .container-xxl .row{
         display: flex;
@@ -195,6 +201,7 @@
         height: auto;
         
     }
+    
     .certificates h2{
         font-size: 30px;
     }
@@ -214,14 +221,18 @@
 }
 
 /* home div image */
-.container-xxl {
+.home{
+    
     position: relative; /* Make sure the container is positioned relative for the overlay to work */
     background-image: url(https://pixelplex.io/next/images/web-development/web-development-bg-1600.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    min-height: 100vh;
+    height: 100vh;
+}
+.container-xxl .row{
+    margin-top: 2.5rem;
 }
 
 .container-xxl::before {
@@ -947,7 +958,7 @@ footer {
     transform: scale(1.2); /* Slight zoom on hover */
   }
   .myskills .container .skill-logo img {
-    width: 70px; /* Ensure the image is visible */
+    width: 60px; /* Ensure the image is visible */
     height: auto;
     max-width: 100%;
     padding: 0;
@@ -1114,6 +1125,7 @@ h5{
     height: auto;
     
 }
+
 #services .container{
     margin-top: 10rem;
 }
@@ -1153,11 +1165,13 @@ h5{
     color: #f6ff7d;
 }
 .sercol .card-body a{
-    color: #ff6f93;
-    font-size: 22px;
-    font-style: italic;
+    background-color: #ff0846;
+    padding: 10px 20px;
+    margin: 50px 0;
     text-decoration: none;
-    text-align: left;
+    color: white;
+    border-radius: 10px;
+    margin-top: 1rem;
 }
 @media (max-width: 600px){
     .sercol .card-body h4 i{
@@ -1174,13 +1188,22 @@ h5{
         height: auto;
         
     }
-    .home .container-xxl{
+    .home .container-xx{
         background-image: none;
     }
     .certificates h2{
         font-size: 10px;
     }
     
+}
+
+@media (max-width: 920px){
+    .home{
+        background-image: none;
+    }
+    .home .container-xxl .row .col-md img{
+        width: 300px;
+    }
 }
 
 .popup {
