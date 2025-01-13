@@ -110,7 +110,7 @@
     .body {
         margin-top: 20px;
         width: 100%;
-        padding: 10px;
+        /* padding: 10px; */
         margin: 0 auto; /* Center content horizontally */
        /* Ensure it doesn't exceed the screen width */
         display: flex; /* Enable flexbox for alignment */
@@ -136,8 +136,12 @@
     .container-xxl::before {
         display: none;
     }
+    .home .container-xxl .col-md .aboutme .typewriter{
+        max-width: 300px;
+    }
     .home .container-xxl .col-md{
         margin-top: 3rem;
+        max-width: 200px;
     }
     .home .container-xxl .col-md img {
         /* padding:0; */
@@ -195,6 +199,7 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        align-items: center;
         /* flex-direction: column; */
         /* flex: 1 1 200px; */
         /* width: 50%; */
@@ -202,9 +207,25 @@
         
     }
     
-    .certificates h2{
-        font-size: 30px;
+    .body .certificates h2{
+        font-size: 25px;
     }
+    .fcontents{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .fcontents .row{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        width: 100%;
+    }
+    .fcontents .row .col .myabout h4{
+        width: 100%;
+        text-align: center;
+    }
+    
   }
 .navbar li:hover {
     background:rgb(255, 27, 65);
@@ -678,7 +699,8 @@ footer {
     margin-top: 20px;
     padding: 20px;
     /* width: 500px; */
-    display: block;
+    display: flex;
+    flex-direction: column;
     /* grid-template-columns: 1fr 1fr ; */
     background-color: #090b22;
     /* background: linear-gradient(75deg , rgb(46, 12, 20), rgb(102, 10, 41), #07116d); */
@@ -713,12 +735,13 @@ footer {
 }
 
 .fcontents .col {
-    margin: 0%;
-    padding-left: 0%;
+    margin: 0;
+    padding-left: 0;
     display: flex;
     /* align-content: first baseline; */
     justify-content: center;
     /* justify-items: left; */
+    width: 100%;
 }
 
 .email {
@@ -750,7 +773,7 @@ footer {
     /* color: rgb(253, 255, 128); */
     color: rgb(255, 27, 65);
     display: flex;
-    justify-content: left;
+    justify-content: center;
     text-align: center;
 }
 
