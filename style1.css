@@ -603,6 +603,47 @@
     font-size: 20px;
 }
 
+
+/* myexperience */
+.experience{
+    margin-top: 8rem;
+}
+
+.experience .container .experience-head{
+    color: #ff0846;
+    font-weight: bold;
+    font-size: 46px;
+    text-align: center;
+    padding: 20px;
+}
+
+.experience .experience-body{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+.experience .experience-body .exp-content p{
+    color: white;
+    font-size: 20px;
+}
+
+.experience .experience-body .exp-content .role{
+    font-size: 20px;
+    color: #ff4466;
+    font-weight: 500;
+}
+
+.experience-body .comp-logo{
+    padding: 20px;
+}
+
+.experience .experience-body .comp-logo img{
+    width: 400px;
+    height: 100%;
+}
+
 .mydesign {
     /* background-color: rgb(21, 27, 37); */
     padding-top: 10rem;
