@@ -171,6 +171,13 @@
        font-weight: 600;
         
     }
+
+    /* experience */
+    .experience .experience-body{
+        flex-direction: column;
+        margin-left: 1remh;
+    }
+
     .myskills{
         width: 400px;
         padding: 20px;
