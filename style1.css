@@ -173,9 +173,23 @@
     }
 
     /* experience */
+
+    .experience .container{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        max-width:400px;
+    }
+
     .experience .experience-body{
         flex-direction: column;
-        margin-left: 1remh;
+        width: 100%;
+        text-align: left;
+    }
+
+    .experience .experience-body .comp-logo img{
+        width: 200px;
+        height: 100%;
     }
 
     .myskills{
